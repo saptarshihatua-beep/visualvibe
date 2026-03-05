@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisualVibe | Creative Design Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-text {
+            background: linear-gradient(90deg, #6366f1, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .vibe-card:hover { transform: translateY(-10px); transition: 0.3s; }
+        .demo-img { object-fit: cover; width: 100%; height: 100%; transition: 0.5s; }
+        .demo-img:hover { scale: 1.1; }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-900">
+
+    <nav class="sticky top-0 bg-white/90 backdrop-blur-md z-50 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-black tracking-tighter">VISUAL<span class="text-indigo-600 font-extrabold">VIBE</span></h1>
+            <div class="space-x-8 hidden md:flex font-semibold text-sm uppercase tracking-widest">
+                <a href="#services" class="hover:text-indigo-600 transition">Services</a>
+                <a href="#demo" class="hover:text-indigo-600 transition">Portfolio</a>
+                <a href="#order" class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition">Order</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="max-w-6xl mx-auto px-6 py-24 text-center">
+        <span class="px-4 py-1 rounded-full bg-indigo-100 text-indigo-700 text-sm font-bold uppercase mb-4 inline-block">Premium Design for Students</span>
+        <h2 class="text-5xl md:text-8xl font-black mb-6 leading-tight">Design that <br><span class="gradient-text">Commands Attention.</span></h2>
+        <p class="text-xl text-slate-500 max-w-2xl mx-auto mb-10">We turn your rough drafts into professional PPTs, Posters, and Resumes in 24 hours.</p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <a href="#order" class="px-10 py-4 bg-slate-900 text-white rounded-2xl font-bold text-lg hover:bg-black transition shadow-xl">Get Started — ₹100</a>
+            <a href="#demo" class="px-10 py-4 border-2 border-slate-200 bg-white rounded-2xl font-bold text-lg hover:bg-slate-50 transition">View Our Work</a>
+        </div>
+    </header>
+
+    <section id="demo" class="max-w-6xl mx-auto py-20 px-6">
+        <div class="flex justify-between items-end mb-12">
+            <div>
+                <h3 class="text-4xl font-black">Our Work Demo</h3>
+                <p class="text-slate-500">Real examples of what we deliver.</p>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="group">
+                <div class="rounded-2xl overflow-hidden aspect-video bg-slate-200 mb-4 shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80" alt="PPT Demo" class="demo-img">
+                </div>
+                <h4 class="font-bold text-xl text-slate-800">Premium PPT Deck</h4>
+                <p class="text-slate-500 text-sm">Clean, dynamic slides for business or college.</p>
+            </div>
+
+            <div class="group">
+                <div class="rounded-2xl overflow-hidden aspect-[3/4] bg-slate-200 mb-4 shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=800&q=80" alt="Resume Demo" class="demo-img">
+                </div>
+                <h4 class="font-bold text-xl text-slate-800">Modern Resume</h4>
+                <p class="text-slate-500 text-sm">ATS-optimized layout for job seekers.</p>
+            </div>
+
+            <div class="group">
+                <div class="rounded-2xl overflow-hidden aspect-video bg-slate-200 mb-4 shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80" alt="Poster Demo" class="demo-img">
+                </div>
+                <h4 class="font-bold text-xl text-slate-800">Event Poster</h4>
+                <p class="text-slate-500 text-sm">Vibrant typography and bold color palettes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="bg-indigo-900 py-24 px-6 text-white">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-4xl font-black text-center mb-16 underline decoration-pink-500">Service Packages</h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="p-8 bg-white/10 backdrop-blur-lg rounded-3xl border border-white/20 vibe-card">
+                    <h5 class="font-bold text-pink-400 mb-2">Basic</h5>
+                    <h4 class="text-2xl font-black mb-4">Posters</h4>
+                    <p class="text-indigo-100 text-sm mb-6">Social media or simple event posters.</p>
+                    <span class="text-3xl font-black">₹100</span>
+                </div>
+                <div class="p-8 bg-white/10 backdrop-blur-lg rounded-3xl border border-white/20 vibe-card">
+                    <h5 class="font-bold text-pink-400 mb-2">Professional</h5>
+                    <h4 class="text-2xl font-black mb-4">Resumes</h4>
+                    <p class="text-indigo-100 text-sm mb-6">Modern layout + PDF delivery.</p>
+                    <span class="text-3xl font-black">₹250</span>
+                </div>
+                <div class="p-8 bg-white/10 backdrop-blur-lg rounded-3xl border border-indigo-400 vibe-card scale-105 bg-indigo-800">
+                    <h5 class="font-bold text-yellow-400 mb-2">Most Popular</h5>
+                    <h4 class="text-2xl font-black mb-4">PPT Deck</h4>
+                    <p class="text-indigo-100 text-sm mb-6">10-15 slides with graphics.</p>
+                    <span class="text-3xl font-black">₹400</span>
+                </div>
+                <div class="p-8 bg-white/10 backdrop-blur-lg rounded-3xl border border-white/20 vibe-card">
+                    <h5 class="font-bold text-pink-400 mb-2">Premium</h5>
+                    <h4 class="text-2xl font-black mb-4">Reports</h4>
+                    <p class="text-indigo-100 text-sm mb-6">Formatted academic project reports.</p>
+                    <span class="text-3xl font-black">₹500</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="max-w-4xl mx-auto py-24 px-6">
+        <div class="bg-white rounded-[3rem] p-12 shadow-2xl border border-slate-100">
+            <div class="text-center mb-10">
+                <h3 class="text-4xl font-black mb-2 text-slate-900">Place Your Order</h3>
+                <p class="text-slate-500">Fill the form, and we'll reach out on WhatsApp/Email.</p>
+            </div>
+            <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-bold mb-2 uppercase text-slate-400">Full Name</label>
+                        <input type="text" placeholder="Rahul Sharma" class="w-full p-4 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-indigo-500 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-2 uppercase text-slate-400">Contact Number</label>
+                        <input type="text" placeholder="+91 XXXXX XXXXX" class="w-full p-4 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-indigo-500 outline-none">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-2 uppercase text-slate-400">Project Type</label>
+                    <select class="w-full p-4 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-indigo-500 outline-none">
+                        <option>Poster Design (₹100)</option>
+                        <option>Professional Resume (₹250)</option>
+                        <option>Standard PPT (₹400)</option>
+                        <option>Project Report (₹500)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-bold mb-2 uppercase text-slate-400">Project Details</label>
+                    <textarea placeholder="Describe your topic, color preferences, and slide count..." rows="4" class="w-full p-4 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-indigo-500 outline-none"></textarea>
+                </div>
+                <button type="submit" class="w-full py-5 bg-indigo-600 text-white rounded-2xl font-black text-xl hover:bg-indigo-700 transition transform active:scale-95 shadow-lg shadow-indigo-200">
+                    SUBMIT & START VIBING ✨
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-400 text-sm">
+        <p class="font-bold mb-2">VISUALVIBE STUDIO &copy; 2026</p>
+        <p>Crafted for Students. Powered by Creativity.</p>
+    </footer>
+
+</body>
+</html>

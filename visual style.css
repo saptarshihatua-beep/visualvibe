@@ -1,0 +1,83 @@
+/* Custom Google Font for a modern feel */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+
+:root {
+    --primary-indigo: #6366f1;
+    --primary-pink: #ec4899;
+    --dark-slate: #0f172a;
+    --light-bg: #f8fafc;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--light-bg);
+}
+
+/* 🌈 Branding: Gradient Text & Shapes */
+.gradient-text {
+    background: linear-gradient(135deg, var(--primary-indigo), var(--primary-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.vibe-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.vibe-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: var(--primary-indigo);
+}
+
+/* 🖼️ Demo Image Effects */
+.demo-container {
+    overflow: hidden;
+    position: relative;
+    border-radius: 1.5rem;
+}
+
+.demo-img {
+    transition: transform 0.6s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.demo-container:hover .demo-img {
+    transform: scale(1.1) rotate(1deg);
+}
+
+/* ✨ Order Form Glassmorphism */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* 🚀 Button Animations */
+.btn-primary {
+    background: var(--primary-indigo);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+.btn-primary:hover {
+    background: #4f46e5;
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 768px) {
+    .vibe-card:hover {
+        transform: translateY(-5px);
+    }
+}
